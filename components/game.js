@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useWeb3Contract, useMoralis } from "react-moralis";
 import { Input, Button, useNotification } from "web3uikit";
 import { abi, contractAddresses } from "../constants";
+
 export default function Game() {
   const { chainId: chainIdHex, isWeb3Enabled } = useMoralis();
   const chainId = parseInt(chainIdHex);
